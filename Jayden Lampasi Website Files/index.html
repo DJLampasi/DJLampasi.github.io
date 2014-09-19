@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DJ Jayden Lampasi</title>
+
+	<!-- Global Stylesheet -->
+	<link rel="stylesheet" href="css/global.css">
+
+	<!-- Font Awesome Stylesheet -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+	
+	<!-- Load jQuery Library -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-migrate.min.js"></script>
+
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+	<!-- Include js plugin -->
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+
+</head>
+<body>
+	
+	<div class="container">
+		<header>
+			<h1 class="logo">
+				<a href="index.html">DJ Jayden Lampasi</a>
+			</h1>
+			<nav role="primary">
+				<ul>
+					<li><a class="nav-links" href="index.html">home</a></li>
+					<li><a class="nav-links" href="#">shows</a></li>
+					<li><a class="nav-links" href="#">music</a></li>
+					<li><a class="nav-links" href="#">videos</a></li>
+					<li><a class="nav-links" href="#">photos</a></li>
+					<li><a class="nav-links" href="#">about</a></li>
+					<li><a class="nav-links" href="#">contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="slide-show-container">
+			<div id="owl-demo" class="owl-carousel owl-theme">
+				<div class="item"><img src="images/1-600px.jpg" alt="image 1"></div>
+				<div class="item"><img src="images/2-600px.jpg" alt="image 2"></div>
+				<div class="item"><img src="images/3-600px.jpg" alt="image 3"></div>
+				<div class="item"><img src="images/4-600px.jpg" alt="image 4"></div>
+				
+		</div><!--/ owl-demo -->
+		</div>
+		<div class="latest-container">
+			<div class="latest-track-container">
+				<h3 class="title-h3">latest track</h3>
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144474460&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</div>
+			<div class="latest-video-container">
+				<h3 class="title-h3">latest video</h3>
+				<a href="https://www.youtube.com/watch?v=51Y8lyz0qqo" target="_blank"><img src="images/Electro-House-Sessions.jpg" alt="Latest Video Thumbnail"></a>
+			</div>
+			<div class="social-media-container">
+				
+					<h3 class="title-h3">social media</h3>
+					<a href="http://facebook.com/DJLampasi" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="http://instagram.com/jlampasi98" target="_blank"><i class="fa fa-instagram"></i></a>
+					<a href="http://youtube.com/user/UpTightProductions" target="_blank"><i class="fa fa-youtube-play"></i></a>
+					<a href="http://soundcloud.com/jayden-lampasi" target="_blank"><i class="fa fa-soundcloud"></i></a>
+				
+			</div>
+		</div>
+		<footer>
+			<span><a id="footer-link" href="index.html">DJLampasi.com.au</a></span>
+			<span id="copyright">&copy; Copyright 2014</span>
+		</footer>
+	</div>
+	<script>
+		$(document).ready(function() {
+	 
+		  $("#owl-demo").owlCarousel({
+		 
+		      navigation : true, // Show next and prev buttons
+		      slideSpeed : 300,
+		      paginationSpeed : 400,
+		      singleItem:true,
+		      autoPlay : 5000
+		 
+		      // "singleItem:true" is a shortcut for:
+		      // items : 1, 
+		      // itemsDesktop : false,
+		      // itemsDesktopSmall : false,
+		      // itemsTablet: false,
+		      // itemsMobile : false
+		 
+		  });
+		 
+		});
+	</script>
+</body>
+</html>
