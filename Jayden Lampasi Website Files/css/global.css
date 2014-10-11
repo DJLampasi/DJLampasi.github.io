@@ -272,6 +272,15 @@ footer {
 }
 
 /* Photos Page */
+
+.photos-heading {
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
 .photos-container {
 	width: 62.649572649573%;
 	margin: 0 auto;
@@ -334,6 +343,7 @@ footer {
 	}
 }*/
 
+/* Videos Page */
 .videos-container {
 	width: 70%;
 	margin: 0 auto;
@@ -376,7 +386,365 @@ footer {
 
 }
 
+/* Music Page */
+.music-container {
+	width: 80%;
+	margin: 0 auto;
+	
+}
 
+.page-heading {
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+.track-music-container {
+	width: 48%;
+	margin: 1%;
+	float: left;
+
+}
+
+/*.track-music-container:nth-child(3) {
+	float: none;
+	clear: left;
+	margin: 1% auto;
+}*/
+
+@media only screen and (max-width: 1441px) {
+	.music-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.track-music-container {
+		width: 98%;
+		margin: 1%;
+		float: left;
+
+	}
+
+}
+
+@media only screen and (max-width: 1199px) {
+	.music-container {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.track-music-container {
+		width: 98%;
+		margin: 1%;
+		float: left;
+
+	}
+}
+
+/* Contact Page */
+.contact-heading {
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.contact-container {
+	width: 80%;
+	margin: 0 auto;
+	
+	
+}
+
+#contact-form {
+	width: 48%;
+	margin: 0 1%;
+	float: left;
+	
+	
+}
+
+input[type] {
+	width: 100%;
+	display: block;
+	height: 3em;
+	padding-left: 0.8em;
+	margin: 1em 0;
+	background-color: #353535;
+	border: none;
+	color: #fff;
+}
+textarea {
+	width: 100%;
+	height: 150px;
+	padding-left: 0.8em;
+	background-color: #353535;
+	border: none;
+}
+
+#contact-details {
+	width: 48%;
+	margin: 1em 1%;
+	float: left;
+	height: auto;
+	padding: 10px;
+	background-color: grey;
+	text-align: center;
+	
+}
+input[placeholder] {
+	font-size: 14px;
+	color: #fff;
+}
+textarea[placeholder] {
+	font-size: 14px;
+	color: #fff;
+}
+@media only screen and (max-width: 1211px) {
+	.contact-container {
+		width: 80%;
+		margin: 0 auto;
+		
+		
+	}
+
+	#contact-form {
+		width: 98%;
+		margin: 0 1%;
+		float: none;
+		
+		
+	}
+	#contact-details {
+		width: 98%;
+		margin: 1em 1%;
+		float: none;
+		height: auto;
+		padding: 10px;
+		background-color: grey;
+		text-align: center;
+		
+	}
+}
+
+/* About Page */
+.about-container {
+	width: 62.649572649573%;
+	margin: 0 auto;
+}
+
+#about-text {
+	width: 48%;
+	margin: 0 1%;
+	float: left;
+	
+	
+}
+
+#about-pic {
+	width: 48%;
+	margin: 0 1%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* Begin Old Contact Styles */
+
+/*
+.contact-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+form#contact-form {
+	background-color: tomato;
+	width: 48%;
+	float: left;
+	margin: 0 1%;
+	padding: 1em;
+
+}
+
+form#contact-form fieldset {
+	border: none;
+	margin-bottom: 1em;
+}
+
+form#contact-form fieldset:last-of-type {
+	margin-bottom: 0;
+}
+
+form#contact-form legend {
+	font-weight: bold;
+	padding-bottom: 1em;
+}
+
+form#contact-form label {
+	float: left;
+	width: 110px; /* 110 / 733
+}
+
+form#contact-form ol li {
+	list-style-type: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+
+form#contact-form button {
+	background-color: #d32f2f;
+	border: none;
+	color: #fff;
+	display: block;
+	font-size: 1.125em;
+	letter-spacing: 1px;
+	padding: 7px 25px;
+}
+
+form#contact-form div {
+	padding: 5px 0;
+}
+
+#contact-details {
+	background-color: grey;
+	width: 48%;
+	float: left;
+	margin: 0 1%;
+	padding: 1em;
+}
+
+textarea#message {
+	width: 70%;
+	height: 15em;
+}
+
+@media only screen and (max-width: 1336px) {
+	.contact-container {
+		width: 62.649572649573%;
+		margin: 0 auto;
+	}
+
+	form#contact-form {
+		background-color: tomato;
+		width: 98%;
+		float: none;
+		margin: 0 1%;
+		padding: 20px;
+
+	}
+	
+	#contact-details {
+		background-color: grey;
+		width: 98%;
+		float: left;
+		margin: 0 1%;
+		padding: 20px;
+	}
+
+}
+@media only screen and (max-width: 662) {
+	.contact-container {
+		width: 62.649572649573%;
+		margin: 0 auto;
+	}
+
+	form#contact-form {
+		background-color: tomato;
+		width: 98%;
+		float: none;
+		margin: 0 1%;
+		padding: 20px;
+
+	}
+	
+	#contact-details {
+		background-color: grey;
+		width: 98%;
+		float: left;
+		margin: 0 1%;
+		padding: 20px;
+	}
+	
+}
+@media only screen and (max-width: 709px) {
+	form#contact-form button {
+		margin-left: 10px;
+	}
+}
+*/
+
+/* End Old Contact Styles */
+
+
+/* Begin Old Music Media Queries Styles */
+
+/*
+@media only screen and (max-width: 1740px) {
+	.music-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.track-music-container {
+		width: 48%;
+		margin: 1%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 1140px) {
+	.music-container {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.track-music-container {
+		width: 98%;
+		margin: 1%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 753px) {
+	.music-container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.track-music-container {
+		width: 98%;
+		margin: 1%;
+		float: left;
+
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.music-container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.track-music-container {
+		width: 98%;
+		margin: 1%;
+		float: left;
+
+	}
+}
+*/
+
+/* End Old Music Media Queries Styles */
 
 
 
