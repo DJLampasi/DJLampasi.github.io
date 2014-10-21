@@ -9,11 +9,6 @@
 	<!-- Global Stylesheet -->
 	<link rel="stylesheet" href="css/global.css">
 
-	<!-- Font Awesome Stylesheet -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-
-	
-	
 	<!-- Load jQuery Library -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery-migrate.min.js"></script>
@@ -25,7 +20,7 @@
 	<!-- Optionally add helpers - button, thumbnail and/or media -->
 	<link rel="stylesheet" href="js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
 	<script type="text/javascript" src="js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript" src="js/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
 	<link rel="stylesheet" href="js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 	<script type="text/javascript" src="js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
@@ -41,22 +36,21 @@
 			</h1>
 			<nav role="primary">
 				<ul>
-					<li><a class="nav-links" href="index.html">home</a></li>
-					<li><a class="nav-links" href="shows.html">shows</a></li>
-					<li><a class="nav-links" href="music.html">music</a></li>
-					<li><a class="nav-links" href="videos.html">videos</a></li>
-					<li><a class="nav-links" href="photos.html">photos</a></li>
-					<li><a class="nav-links" href="about.html">about</a></li>
-					<li><a class="nav-links" href="contact.html">contact</a></li>
+					<li><a href="index.html">home</a></li>
+					<li><a href="music.html">music</a></li>
+					<li><a href="videos.html">videos</a></li>
+					<li><a href="photos.html">photos</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="contact.html">contact</a></li>
 				</ul>
 			</nav>
 		</header>
 		
-		<h2 class="page-heading">videos</h2>
-		
 		<!-- Begin Class videos-container -->
 		<div class="videos-container">
 			
+			<h2 class="page-heading">videos</h2>
+
 			<a class="fancybox fancybox.iframe" rel="video-gallery" target="_blank" href="http://www.youtube.com/embed/51Y8lyz0qqo?autoplay=1">
 				<img src="images/video-thumb/1-video-thumb.jpg" alt="DJLampasi video 1" title="DJLampasi video 1">
 			</a>
@@ -68,10 +62,8 @@
 		<!-- End Class videos-container -->
 		
 		<footer>
-
 			<span><a id="footer-link" href="index.html">DJLampasi.com.au</a></span>
 			<span id="copyright">&copy; Copyright 2014</span>
-
 		</footer>
 
 	</div>
@@ -79,9 +71,6 @@
 	
 	<script>
 		$(document).ready(function() {
-
-			// var url = window.location.href;
-			// $('nav[role="primary"] ul li a[href="'+url+'"]').addClass('current-page-item');
 
 			$(".fancybox").fancybox({
 				maxWidth	: 800,
@@ -92,9 +81,7 @@
 				autoSize	: false,
 				closeClick	: false,
 				openEffect	: 'none',
-				closeEffect	: 'none',
-				// arrows      : true,
-				// nextClick   : true
+				closeEffect	: 'none'
 			});
 
 			$(".fancybox-thumb").fancybox({

@@ -1,7 +1,9 @@
 @-ms-viewport {
 	width: device-width;
 }
+
 /* apply a natural box layout model to all elements, but allowing components to change */
+
 html {
 	box-sizing: border-box;
 	font: 100%/1.5em Helvetica, Arial, sans-serif; /* 24 / 16 = 1.5em */
@@ -11,43 +13,61 @@ html {
 	background-color: #020202;
 	
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 * {
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
 }
+
+/* Global Styles */
+
 body {
-	font-size: 1em; /* 14 / 16 = 0.875em */
-	line-height: 1.5em;
 	color: #fff;
 }
+
 a:link, a:visited, a:hover, a:active {
 	color: #fff;
 	text-decoration: none;
-	
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
 .container {
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	background-color: #020202;
-	
-	
 }
 
 header {
 	padding-top: 10px;
-	
 }
 
-/* logo */
+.page-heading {
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+.photos-contact-page-heading {
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+/* Logo */
+
 h1.logo a {
 	width: 308px;
 	height: 121px;
@@ -61,7 +81,9 @@ h1.logo a {
 	color: transparent;
 	background-color: transparent;
 }
+
 /* Navigation */
+
 nav[role="primary"] ul {
 	list-style-type: none;
 	background: #d32f2f;
@@ -69,12 +91,12 @@ nav[role="primary"] ul {
 	height: auto;
 	margin: 15px auto;
 	text-align: center;
-
 }
+
 nav[role="primary"] ul li {
 	display: inline;
-
 }
+
 nav[role="primary"] ul li a {
 	display: inline;
 	height: 50px;
@@ -83,47 +105,48 @@ nav[role="primary"] ul li a {
 	font-size: 1.28571428571429em; /* 18px / 14px */
 	font-weight: bold;
 }
+
 nav[role="primary"] ul li a:hover {
 	background: #b71c1c;
 }
 
-.current-page-item {
-	background: #b71c1c;
-}
+/* Home Page */
 
 .slide-show-container {
 	width: 58.547008547009%;/* 685 / 1170 = 58.547008547009% */
 	height: auto;
-	/*background-color: #d32f2f;*/
 	margin-top: 0;
 	margin-right: auto;
 	margin-bottom: 30px;
 	margin-left: auto;
-	/*border: 2px solid #b71c1c;*/
-	max-width: 600px;
+	max-width: 650px;
 }
+
 #owl-demo .item img{
     display: block;
     width: 100%;
     height: auto;
 }
+
 .latest-container {
 	width: 62.649572649573%; /* 733 / 1170 = 62.649572649573% */
 	height: 293px;
 	margin: 30px auto;
 }
+
 .latest-track-container {
 	width: 69.167803547067%; /* 507 / 733 = 69.167803547067% */
 	height: 190px;
 	float: left;
 }
+
 .latest-video-container {
 	width: 20%; /* 186 / 733 = 25.37517053206% */
 	height: auto;
-	/*background: #b71c1c url("../images/Electro-House-Sessions.jpg") no-repeat right bottom;*/
 	float: right;
 	min-width: 186px;
 }
+
 .social-media-container {
 	width: 230px; /* 230 / 733 = 31.37789904502% */
 	height: 73px;
@@ -131,12 +154,14 @@ nav[role="primary"] ul li a:hover {
 	float: right;
 	margin: 30px 30px 0 0;
 }
+
 .title-h3 {
 	text-transform: capitalize;
 	font-size: 1.125em; /* 18px / 16px = 1.125em */
 	font-weight: bold;
 	margin-bottom: 5px;
 }
+
 .fa.fa-facebook {
 	font-size: 1.71428571428571em; /* 24px / 14px */
 	line-height: 50px;
@@ -145,9 +170,8 @@ nav[role="primary"] ul li a:hover {
 	height: 50px;
 	border-radius: 50px;
 	text-align: center;
-	
-	
 }
+
 .fa.fa-instagram {
 	font-size: 1.71428571428571em; /* 24px / 14px */
 	line-height: 50px;
@@ -157,8 +181,8 @@ nav[role="primary"] ul li a:hover {
 	border-radius: 50px;
 	text-align: center;
 	margin-left: 5px;
-	
 }
+
 .fa.fa-youtube-play {
 	font-size: 1.71428571428571em; /* 24px / 14px */
 	line-height: 50px;
@@ -168,8 +192,8 @@ nav[role="primary"] ul li a:hover {
 	border-radius: 50px;
 	text-align: center;
 	margin-left: 5px;
-	
 }
+
 .fa.fa-soundcloud {
 	font-size: 1.71428571428571em; /* 24px / 14px */
 	line-height: 50px;
@@ -179,8 +203,9 @@ nav[role="primary"] ul li a:hover {
 	border-radius: 50px;
 	text-align: center;
 	margin-left: 5px;
-	
 }
+
+/* Footer */
 
 footer {
 	clear: both;
@@ -203,20 +228,25 @@ footer {
 	text-transform: capitalize;
 }
 
+/* Home Page Media Queries */
+
 @media only screen and (max-width: 1135px) {
+	.slide-show-container {
+		width: 100%;
+	}
+	.latest-container {
+		width: 70%;
+	}
 	.latest-track-container {
 		width: 100%; /* 507 / 733 = 69.167803547067% */
 		height: 190px;
 		float: none;
-		
 	}
 	.latest-video-container {
 		width: 186px; /* 186 / 733 = 25.37517053206% */
 		height: auto;
-		/*background: #b71c1c url("../images/Electro-House-Sessions.jpg") no-repeat right bottom;*/
 		float: left;
 		margin: 10px auto 0 auto;
-		
 	}
 	.social-media-container {
 		width: 230px; /* 230 / 733 = 31.37789904502% */
@@ -226,13 +256,14 @@ footer {
 		margin-top: 10px;
 		display: inline-block;
 	}
-	
-	
 }
 
 @media only screen and (max-width: 856px) {
+	.slide-show-container {
+		width: 100%;
+	}
 	.latest-container {
-		width: 90%; /* 733 / 1170 = 62.649572649573% */
+		width: 85%; /* 733 / 1170 = 62.649572649573% */
 		height: 293px;
 		margin: 30px auto;
 	}
@@ -240,26 +271,34 @@ footer {
 
 @media only screen and (max-width: 685px) {
 	.slide-show-container {
-		width: 100%;/* 685 / 1170 = 58.547008547009% */
+		width: 95%;/* 685 / 1170 = 58.547008547009% */
 		height: auto;
-		/*background-color: #d32f2f;*/
 		margin-top: 0;
 		margin-right: auto;
 		margin-bottom: 30px;
 		margin-left: auto;
-		/*border: 2px solid #b71c1c;*/
 		max-width: 960px;
+	}
+	.latest-container {
+		width: 95%;
 	}
 }
 
 @media only screen and (max-width: 558px) {
+	.slide-show-container {
+		width: 100%;
+	}
+	.latest-container {
+		width: 90%;
+	}
+	.latest-track-container {
+		width: 100%;
+	}
 	.latest-video-container {
 		width: 186px; /* 186 / 733 = 25.37517053206% */
 		height: auto;
-		/*background: #b71c1c url("../images/Electro-House-Sessions.jpg") no-repeat right bottom;*/
 		float: none;
 		margin: 10px auto 0 auto;
-		
 	}
 	.social-media-container {
 		width: 230px; /* 230 / 733 = 31.37789904502% */
@@ -273,16 +312,8 @@ footer {
 
 /* Photos Page */
 
-.photos-heading {
-	text-transform: capitalize;
-	text-align: center;
-	font-size: 2em;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-}
-
 .photos-container {
-	width: 62.649572649573%;
+	width: 70%;
 	margin: 0 auto;
 	/* Prevent vertical gaps */
 	line-height: 0;
@@ -293,7 +324,6 @@ footer {
 	-moz-column-gap: 0px;
 	column-count: 3;
 	column-gap: 0px;
-
 }
 
 .photos-container img {
@@ -301,6 +331,8 @@ footer {
 	width: 100% !important;
 	height: auto !important;
 }
+
+/* Photos Page Media Queries */
 
 @media only screen and (min-width: 1280px) {
 	.photos-container {
@@ -315,6 +347,7 @@ footer {
 
 @media only screen and (max-width: 990px) {
 	.photos-container {
+		width: 70%;
 		-webkit-column-count: 2;
 		-webkit-column-gap: 0px;
 		-moz-coloumn-count: 2;
@@ -325,6 +358,12 @@ footer {
 }
 
 @media only screen and (max-width: 838px) {
+	.photos-container {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 575px) {
 	.photos-container {
 		width: 90%;
 	}
@@ -343,62 +382,127 @@ footer {
 	}
 }*/
 
+
 /* Videos Page */
+
 .videos-container {
-	width: 70%;
+	width: 36.5%;
 	margin: 0 auto;
 }
 
 .fancybox {
 	display: block;
-	width: 23%;
+	width: 46%;
 	float: left;
-	margin: 1%;
+	margin: 2%;
 }
 
+/* Videos Page Media Queries */
 
+@media only screen and (max-width: 1600px) {
+	.videos-container {
+		width: 43.9%;
+		margin: 0 auto;
+	}
+
+	.fancybox {
+		display: block;
+		width: 46%;
+		float: left;
+		margin: 2%;
+	}
+}
 
 @media only screen and (max-width: 1300px) {
+	.videos-container {
+		width: 54.1%;
+		margin: 0 auto;
+	}
+
 	.fancybox {
 		display: block;
-		width: 31.33333333333333%;
+		width: 46%;
 		float: left;
-		margin: 1%;
+		margin: 2%;
 	}
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
+	.videos-container {
+		width: 68.9%;
+		margin: 0 auto;
+	}
+
 	.fancybox {
 		display: block;
-		width: 48%;
+		width: 46%;
 		float: left;
-		margin: 1%;
+		margin: 2%;
 	}
 }
 
-@media only screen and (max-width: 481px) {
-	.fancybox {
-		display: block;
-		width: 98%;
-		float: left;
-		margin: 1%;
+@media only screen and (max-width: 800px) {
+	.videos-container {
+		width: 88.6%;
+		margin: 0 auto;
 	}
 
+	.fancybox {
+		display: block;
+		width: 46%;
+		float: left;
+		margin: 2%;
+	}
+}
+
+@media only screen and (max-width: 571px) {
+	.videos-container {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.fancybox {
+		display: block;
+		width: 96%;
+		float: left;
+		margin: 2%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.videos-container {
+		width: 71.8%;
+		margin: 0 auto;
+	}
+
+	.fancybox {
+		display: block;
+		width: 96%;
+		float: left;
+		margin: 2%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.videos-container {
+		width: 86.8%;
+		margin: 0 auto;
+	}
+
+	.fancybox {
+		display: block;
+		width: 96%;
+		float: left;
+		margin: 2%;
+	}
 }
 
 /* Music Page */
+
 .music-container {
 	width: 80%;
 	margin: 0 auto;
 	
-}
-
-.page-heading {
-	text-transform: capitalize;
-	text-align: center;
-	font-size: 2em;
-	margin-top: 1.5em;
-	margin-bottom: 1em;
 }
 
 .track-music-container {
@@ -408,11 +512,7 @@ footer {
 
 }
 
-/*.track-music-container:nth-child(3) {
-	float: none;
-	clear: left;
-	margin: 1% auto;
-}*/
+/* Music Page Media Queries */
 
 @media only screen and (max-width: 1441px) {
 	.music-container {
@@ -424,14 +524,12 @@ footer {
 		width: 98%;
 		margin: 1%;
 		float: left;
-
 	}
-
 }
 
 @media only screen and (max-width: 1199px) {
 	.music-container {
-		width: 95%;
+		width: 90%;
 		margin: 0 auto;
 	}
 
@@ -439,32 +537,20 @@ footer {
 		width: 98%;
 		margin: 1%;
 		float: left;
-
 	}
 }
 
 /* Contact Page */
-.contact-heading {
-	text-transform: capitalize;
-	text-align: center;
-	font-size: 2em;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-}
 
 .contact-container {
 	width: 80%;
 	margin: 0 auto;
-	
-	
 }
 
 #contact-form {
 	width: 48%;
 	margin: 0 1%;
 	float: left;
-	
-	
 }
 
 input[type] {
@@ -477,12 +563,24 @@ input[type] {
 	border: none;
 	color: #fff;
 }
+
+input[type=submit] {
+	font-size: 1em;
+	margin: 0 0;
+}
+
+input[type=submit]:hover {
+	background-color: #282828;
+	cursor: pointer;
+}
+
 textarea {
 	width: 100%;
 	height: 150px;
 	padding-left: 0.8em;
 	background-color: #353535;
 	border: none;
+	margin: 1em 0;
 }
 
 #contact-details {
@@ -490,49 +588,77 @@ textarea {
 	margin: 1em 1%;
 	float: left;
 	height: auto;
-	padding: 10px;
-	background-color: grey;
+	padding: 1.5em; /* 10px */
+	background-color: #484848;
 	text-align: center;
-	
 }
+
+.management-text {
+	margin: 0.5em 0;
+}
+
 input[placeholder] {
 	font-size: 14px;
 	color: #fff;
 }
+
 textarea[placeholder] {
 	font-size: 14px;
 	color: #fff;
 }
+
+/* Contact Page Media Queries */
+
 @media only screen and (max-width: 1211px) {
 	.contact-container {
 		width: 80%;
 		margin: 0 auto;
-		
-		
 	}
 
 	#contact-form {
 		width: 98%;
 		margin: 0 1%;
-		float: none;
-		
-		
+		float: none;	
 	}
+
 	#contact-details {
 		width: 98%;
 		margin: 1em 1%;
 		float: none;
 		height: auto;
-		padding: 10px;
-		background-color: grey;
+		padding: 0.8em;
+		background-color: #484848;
 		text-align: center;
-		
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.contact-container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#contact-form {
+		width: 98%;
+		margin: 0 1%;
+		float: none;	
+	}
+
+	#contact-details {
+		width: 98%;
+		margin: 1em 1%;
+		float: none;
+		height: auto;
+		padding: 0.8em;
+		background-color: #484848;
+		text-align: center;
 	}
 }
 
 /* About Page */
+
 .about-container {
-	width: 62.649572649573%;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -540,8 +666,6 @@ textarea[placeholder] {
 	width: 48%;
 	margin: 0 1%;
 	float: left;
-	
-	
 }
 
 #about-pic {
@@ -550,208 +674,105 @@ textarea[placeholder] {
 	float: left;
 }
 
-
-
-
-
-
-
-
-
-
-/* Begin Old Contact Styles */
-
-/*
-.contact-container {
-	width: 90%;
-	margin: 0 auto;
+.about-para {
+	padding-bottom: 0.67em; /* 10px */
 }
 
-form#contact-form {
-	background-color: tomato;
-	width: 48%;
-	float: left;
-	margin: 0 1%;
-	padding: 1em;
+/* About Page Media Queries */
 
-}
-
-form#contact-form fieldset {
-	border: none;
-	margin-bottom: 1em;
-}
-
-form#contact-form fieldset:last-of-type {
-	margin-bottom: 0;
-}
-
-form#contact-form legend {
-	font-weight: bold;
-	padding-bottom: 1em;
-}
-
-form#contact-form label {
-	float: left;
-	width: 110px; /* 110 / 733
-}
-
-form#contact-form ol li {
-	list-style-type: none;
-	padding: 5px 10px;
-	margin-bottom: 2px;
-}
-
-form#contact-form button {
-	background-color: #d32f2f;
-	border: none;
-	color: #fff;
-	display: block;
-	font-size: 1.125em;
-	letter-spacing: 1px;
-	padding: 7px 25px;
-}
-
-form#contact-form div {
-	padding: 5px 0;
-}
-
-#contact-details {
-	background-color: grey;
-	width: 48%;
-	float: left;
-	margin: 0 1%;
-	padding: 1em;
-}
-
-textarea#message {
-	width: 70%;
-	height: 15em;
-}
-
-@media only screen and (max-width: 1336px) {
-	.contact-container {
-		width: 62.649572649573%;
+@media only screen and (max-width: 1426px) {
+	.about-container {
+		width: 82%;
 		margin: 0 auto;
 	}
 
-	form#contact-form {
-		background-color: tomato;
-		width: 98%;
-		float: none;
-		margin: 0 1%;
-		padding: 20px;
-
-	}
-	
-	#contact-details {
-		background-color: grey;
-		width: 98%;
-		float: left;
-		margin: 0 1%;
-		padding: 20px;
-	}
-
-}
-@media only screen and (max-width: 662) {
-	.contact-container {
-		width: 62.649572649573%;
-		margin: 0 auto;
-	}
-
-	form#contact-form {
-		background-color: tomato;
-		width: 98%;
-		float: none;
-		margin: 0 1%;
-		padding: 20px;
-
-	}
-	
-	#contact-details {
-		background-color: grey;
-		width: 98%;
-		float: left;
-		margin: 0 1%;
-		padding: 20px;
-	}
-	
-}
-@media only screen and (max-width: 709px) {
-	form#contact-form button {
-		margin-left: 10px;
-	}
-}
-*/
-
-/* End Old Contact Styles */
-
-
-/* Begin Old Music Media Queries Styles */
-
-/*
-@media only screen and (max-width: 1740px) {
-	.music-container {
-		width: 80%;
-		margin: 0 auto;
-	}
-
-	.track-music-container {
+	#about-text {
 		width: 48%;
-		margin: 1%;
+		margin: 0 1%;
 		float: left;
+	}
+
+	#about-pic {
+		width: 48%;
+		margin: 0 1%;
+		float: left;
+	}
+
+	.about-para {
+		padding-bottom: 0.67em; /* 10px */
 	}
 }
 
-@media only screen and (max-width: 1140px) {
-	.music-container {
-		width: 60%;
+@media only screen and (max-width: 928px) {
+	.about-container {
+		width: 62%;
 		margin: 0 auto;
 	}
 
-	.track-music-container {
+	#about-text {
 		width: 98%;
-		margin: 1%;
-		float: left;
+		margin: 0 1%;
+		float: none;
+	}
+
+	#about-pic {
+		width: 98%;
+		margin: 0 1%;
+		float: none;
+	}
+
+	.about-para {
+		padding-bottom: 0.67em; /* 10px */
 	}
 }
 
-@media only screen and (max-width: 753px) {
-	.music-container {
+@media only screen and (max-width: 641px) {
+	.about-container {
+		width: 86%;
+		margin: 0 auto;
+	}
+
+	#about-text {
+		width: 98%;
+		margin: 0 1%;
+		float: none;
+	}
+
+	#about-pic {
+		width: 98%;
+		margin: 0 1%;
+		float: none;
+	}
+
+	.about-para {
+		padding-bottom: 0.67em; /* 10px */
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 486px) {
+	.about-container {
 		width: 90%;
 		margin: 0 auto;
 	}
 
-	.track-music-container {
+	#about-text {
 		width: 98%;
-		margin: 1%;
-		float: left;
+		margin: 0 1%;
+		float: none;
+	}
 
+	#about-pic {
+		width: 98%;
+		margin: 0 1%;
+		float: none;
+	}
+
+	.about-para {
+		padding-bottom: 0.67em; /* 10px */
+		font-size: 0.95em; /* 15.2px */
 	}
 }
-
-@media only screen and (max-width: 400px) {
-	.music-container {
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.track-music-container {
-		width: 98%;
-		margin: 1%;
-		float: left;
-
-	}
-}
-*/
-
-/* End Old Music Media Queries Styles */
-
-
-
-
-
-
-
 
 
 
