@@ -86,7 +86,7 @@ h1.logo a {
 
 nav[role="primary"] ul {
 	list-style-type: none;
-	background: #d32f2f;
+	background: #14a499; /* #1eb3ab */ /* #1fada7 */
 	width: 100%;
 	height: auto;
 	margin: 15px auto;
@@ -104,10 +104,11 @@ nav[role="primary"] ul li a {
 	padding: 13px;
 	font-size: 1.28571428571429em; /* 18px / 14px */
 	font-weight: bold;
+	text-transform: capitalize;
 }
 
 nav[role="primary"] ul li a:hover {
-	background: #b71c1c;
+	background: #0b746c;
 }
 
 /* Home Page */
@@ -144,7 +145,7 @@ nav[role="primary"] ul li a:hover {
 	width: 20%; /* 186 / 733 = 25.37517053206% */
 	height: auto;
 	float: right;
-	min-width: 186px;
+	min-width: 168px;
 }
 
 .social-media-container {
@@ -212,7 +213,7 @@ footer {
 	width: 100%;
 	height: 70px;
 	margin: 0 auto;
-	background-color: #d32f2f;
+	background-color: #14a499;
 	text-align: center;
 	position: absolute;
 	bottom: 0;
